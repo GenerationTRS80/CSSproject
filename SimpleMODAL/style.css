@@ -1,0 +1,79 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:17px;
+
+    /* This is how with the row or rows are from top of row to botton of row */
+    line-height: 1.6;
+}
+
+.button{
+    /* This formats the button */
+        background: coral;
+        padding: 1em 2em;
+
+        /* Text color white */
+        color: #fff; 
+        border: 0;
+}
+
+.button:hover{
+    background: #333;
+
+}
+
+.modal{
+    display:none;
+    position: fixed;
+
+    /* Z index -- Is the order of elements. The  higher the index the more upfront it will be */
+    z-index: 1;
+
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+
+    /* Scroll bars if need If the box is small and their is text/controls outside the current box then ename scroll bar */
+    overflow: auto;
+
+    /* Add background color with transparency using RGBA  as opposed to RGB with specifies the opacity */
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.modal-content{
+    /* Position the text within the Modal */
+
+    /* Backgrount color light grey */
+    background-color: #f4f4f4;
+
+    /* How far within the modal you want the text from the margin and Auto to set top bottom margin */
+    margin: 20% auto;
+
+    /* Padding */
+    padding: 15px;
+    width: 90%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 1.5s;
+}
+
+.closeBtn{
+
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+}
+
+/* Set the Close Button so when you hover over it with your cursor.  It's color  will change to black and a hand symbol wll appear */
+.closeBtn:hover,.closeBtn:focus{
+    color: #000;
+    text-decoration: none;
+    cursor:pointer;
+
+}
+
+@keyframes modalopen{
+    from {opacity: 0}
+    to {opacity: 1}
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid HTML 3</title>
+	<style >
+
+
+		.wrapper{ 
+
+			display:grid;
+			grid-template-columns: 1fr 2fr 1fr;	
+
+			/*Fit any content in the box but with a max size of the box of 100px	*/
+			grid-auto-rows: minmax(100px,auto);
+			grid-gap: 1em;
+
+			/*Justify and aligning items Start puts the item at the beginning of the column*/
+		/*	justify-items:start;*/
+		/*	justify-items:center;*/
+			/*justify-items:end;*/
+
+			justify-items:stretch;
+			align-items: stretch;
+
+		}
+
+		.wrapper > div{
+		/*	background-color: : #A9A9A9;*/
+			padding: 1em;
+
+		}
+
+		.wrapper > div:nth-child(odd){
+		/*	background-color: #A9A9A9;*/
+
+		}
+
+
+		.box1{
+			background-color: #FF7F50;
+			/*align-self: start;*/
+		
+			/*To push it down*/
+			grid-column: 1/3;			
+			grid-row: 1/3;
+		}
+
+		.box2{
+			background-color: #FFF8DC;
+			/*align-self: end;*/
+
+			grid-column: 3;
+			grid-row: 1/3;
+		
+
+		}
+
+		.box3{
+			background-color: #00FFFF;
+			/*justify-self:end;*/
+			
+/*			grid-column: 4;
+			grid-row: 2/4;*/
+
+			grid-column: 2/4;
+			grid-row: 3;
+		}
+
+		.box4{
+			background-color: #6495ED;
+			border: 3px solid #333;
+
+			/********** You can overlap elements with Grid ***************/
+			grid-column: 1;
+			grid-row: 2/4;	
+
+		}
+
+	</style>
+</head>
+
+
+<body>
+	<div class="wrapper">
+		<div class="box box1">Box 1</div>
+		<div class="box box2">Box 2</div>
+		<div class="box box3">Box 3</div>
+		<div class="box box4">Box 4</div>
+	</div>
+
+</body>
+</html>

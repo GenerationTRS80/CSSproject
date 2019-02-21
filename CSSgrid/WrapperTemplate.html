@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid Wrapper Template</title>
+	<style >
+
+
+		.wrapper{ 
+
+			display:grid;
+
+			/* Fractions INSTEAD of using precents */
+			/*grid-template-columns: 1fr 1fr 1fr;*/
+
+			/* Using repeat to make columns*/
+			/*grid-template-columns: repeat(4,1fr 2fr);*/
+
+			/* */
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 1em;
+
+			/*grid-auto-rows: 100px;*/
+
+			/* The minmax() will streach the column. This makes the height flexable*/
+			grid-auto-rows: minmax(100px; auto)
+
+		}
+
+
+
+		}
+
+		.wrapper > div{
+			background: #eee;
+			padding: 1em;
+
+		}
+
+		.wrapper > div:nth-child(odd){
+			background: #ddd;
+
+		}
+
+
+	
+	</style>
+</head>
+
+
+<body>
+	<div class="wrapper">
+
+	</div>
+
+</body>
+</html>
