@@ -1,0 +1,77 @@
+/* Montserrat numbers 400 and 600 represent the fond weight */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+body {
+  /* Note you need to git rid of body's inherent margin and set it to 0*/
+  margin: 0em; 
+  font-family: 'Montserrat',sans-serif;
+}
+
+/* Assign Paragraph and blockquote styles */
+p, blockquote {
+  font-size: .9em;
+  line-height: 1.6em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+/*  Reference a Class with a period
+    Padding is inside and element and Margin is outside the element*/
+.container {
+  text-align: center;
+  /* Clockwise top right bottom left */
+  padding: .8em 1.2em; 
+}
+
+.logo {
+  width: 130px;
+}
+
+.hide-mobile {
+  display: none;
+  margin-top: 45%;
+}
+
+/*  Display flex is used small elements in your user interface
+    that need to be structured into columns*/
+/*  Flexbox allows you: Take two items that are side by side and put them into a    column */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  width: 25px;
+  margin-top: 45%;
+}
+
+.server {
+  width: 70%;
+  margin: 2em auto 2em 25%;
+}
+
+/* You can mix class and element */
+/* Z index indicates the layer of the element. On Top On Bottom */
+h1, .subhead {
+  position: relative;
+  z-index: 3;
+}
+
+.subhead {
+  font-size: 1.1em;
+}
+
+/* Color controls the TEXT COLOR */
+.blue-container {
+  width: 100%;
+  background: #00C2FF;
+  color:#fff;
+  margin: 15%;
+  padding: 4em 0 2em;
+}
+
