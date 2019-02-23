@@ -200,11 +200,11 @@ h2 {
 
 .footer-container:after{
   content: "";
+  position:absolute;
   width: 80px;
   height: 80px;
    /* background-color: rgb(223, 22, 22); */
   background-color: #fff;
-  position:absolute;
   z-index: -1;
   top:-80px;
   left: 0%;
@@ -223,6 +223,52 @@ ul.footer-links li {
 ul.footer-links li a{
   color: #9d9d9d;
   font-size: .8em;
+}
+
+nav ul {
+  /* Fixed keeps the element inplace while you scroll.
+      The element will remain a NOT scroll off */
+  position: fixed;
+  width: 60%;
+  top: 0;
+  right: 0;
+  text-align: left;
+  background: rgb(36,41,44);
+  height: 100%;
+  /* Make block on top of everything */
+  z-index: 4;
+  padding-top: 3em;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  /* Display block allows to set Width and Height on the a elements */
+  display: block;
+  width: 100%;
+  padding: 1em 2em;
+  background-color: rgb(52,59,63);
+  border-style: solid;
+  border-top-width: 2px;
+  border-top-color:rgb(52, 223, 151);
+  border-left-color:  rgb(52,59,63);
+  border-right-color: rgb(52, 59, 63);
+  border-bottom-color: rgb(52, 59, 63);
+  z-index: 5;
+}
+
+nav ul li a:hover {
+  color:rgb(54, 224, 32);
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: 800;
+  background-color: rgb(98, 107, 112);
+  border-style: solid;
+  border-top-width: 2px;
+  border-top-color:rgb(52, 223, 151);
+  border-left-color: rgb(98, 107, 112);
+  border-right-color: rgb(98, 107, 112);
+  border-bottom-color: rgb(98, 107, 112);
 }
 
 
