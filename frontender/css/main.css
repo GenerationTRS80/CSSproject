@@ -34,7 +34,8 @@ ul {
 
 .hide-mobile {
   display: none;
-  margin-top: 45%;
+  /* The margin-top: 45% will force the menu down. This is just an example below */
+  /* margin-top: 45%; */
 }
 
 /*  Display flex is used small elements in your user interface
@@ -228,23 +229,22 @@ nav ul {
   /* Fixed keeps the element inplace while you scroll.
       The element will remain a NOT scroll off */
   position: fixed;
-  width: 60%;
+  height: 20%;
+  width: 20%;
   top: 0;
   right: 0;
   text-align: left;
   background: rgb(36,41,44);
-  height: 100%;
   /* Make block on top of everything */
-  z-index: 4;
-  padding-top: 3em;
+  z-index: 99;
+  padding-top: 3em; 
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
   /* Display block allows to set Width and Height on the a elements */
-  display: block;
-  width: 100%;
+  display: inline-block;
   padding: 1em 2em;
   background-color: rgb(52,59,63);
   border-style: solid;
@@ -286,7 +286,7 @@ nav ul li a:hover {
 /* ----- Media Queries ----- */
 
 /* NOTE: 550px represent the width where the media query will take effect */
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
 
     h1 {
       font-size: 2.2em;
@@ -338,5 +338,79 @@ nav ul li a:hover {
       width: 40%;
     }
 
+    .cta {
+      width: 50%;
+    }
+
+
+}
+
+@media only screen and (min-width: 800px) {
+
+  .subhead {
+    margin-bottom: 15%;
+  }
+
+  .blue-container ul {
+    margin: 0 0 4% 0;
+  }
+
+  .grey-container ul {
+    margin: 4% 0 0;
+  }
+
+  .cta {
+    width: 40%;
+  }
+
+}
+
+@media only screen and (min-width: 1009px) {
+
+    .cta {
+      width: 30%;
+    }
+
+    .container {
+      width: 40%;
+      margin: 0 auto 13% auto;
+    }
+
+    .show-desktop {
+      display: inline-block;
+      margin: 0 auto 13% auto;
+      width: 20%;
+    }
+
+    .hide-desktop {
+      display: none;
+    }
+
+    nav ul {
+      position: inherit;
+      width: auto;
+      height: auto;
+      background: none;
+      display: flex;
+      padding-top: 0;
+    }
+
+    nav ul li {
+      float: left;
+    }
+
+    nav ul li a {
+      background-color: inherit;
+      padding: 1em 2em;
+    }
+
+    nav ul li a:hover {
+      background-color: inherit;
+    }
+
+    scroll {
+      width: 30px;
+      animation: move;
+    }
 
 }
