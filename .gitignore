@@ -1,2 +1,4 @@
 #This is the ignore file
 /frontender/img
+*.jpg
+/img
