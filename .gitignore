@@ -2,3 +2,6 @@
 /frontender/img
 *.jpg
 /img
+*.zip
+*.ds_store
+*.png
