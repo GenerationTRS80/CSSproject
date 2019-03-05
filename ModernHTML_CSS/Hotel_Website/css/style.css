@@ -34,12 +34,37 @@ p {
   margin: 10px 0;
 }
 
-/* Utility Class */
+/* Utility Classes container text-primary lead btn*/
 .container {
   margin: auto;
   max-width: 1100px;
   overflow: auto;
-  padding: 0 2ppx;
+  padding: 0 20px;
+}
+
+.text-primary {
+  color: #f7c08a;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+  padding: 13px 20px;
+  /* Buttons by default have border Links by default do NOT have borders */
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #f7c08a;
+  color: #333;
+  font-weight: bold;
 }
 
 #navbar {
@@ -50,11 +75,13 @@ p {
 
 #navbar a {
   color: #fff;
+
 }
 
 #navbar h1 {
    /* Align text or box to the left side */
   float: left;
+  font-weight: bold;
   padding-top: 20px;
 }
 
@@ -79,4 +106,31 @@ p {
   font-weight: bold;
   background: #8b0b0b;
 }
+
+/* Showcase */
+#showcase {
+  background-image: url('/ModernHTML_CSS/Hotel_Website/img/showcase.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+}
+
+#showcase .showcase-content {
+  color:  #fff;
+  text-align: center;
+  padding-top: 170px;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+  padding-bottom: 20px;
+}
+
+#showcase .showcase-content p {
+  padding-bottom: 20px;
+  line-height: 1.2em;
+}
+
+
 
