@@ -1,3 +1,26 @@
+
+
+body, html {
+  height: 100%;
+  margin:0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url(/ModernHTML_CSS/CSS_SandBox/img/MtShasta02272019_sm_Crop.jpg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heading {
+  color: cornflowerblue;
+}
 h3 {
   color: blue;
 }

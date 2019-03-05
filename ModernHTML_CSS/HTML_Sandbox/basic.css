@@ -1,11 +1,25 @@
 body {
-  background-image: url("img/MtShasta02272019_sm.jpg");
+
+  /* Center and scale the image nicely */
+  background: url("/ModernHTML_CSS/CSS_SandBox/img/MtShasta02272019_sm_Crop.jpg") no-repeat center center/cover;
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
+.background-shasta {
+    /* background-image: url("/ModernHTML_CSS/CSS_SandBox/img/MtShasta02272019_sm_Crop.jpg"); */
+
+    /* Center and scale the image nicely */
+    background: url("/ModernHTML_CSS/CSS_SandBox/img/MtShasta02272019_sm_Crop.jpg") no-repeat center center/cover;
+    /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
 
 .unsplash{
 
-
+  background-image: url("/ModernHTML_CSS/CSS_SandBox/img/leaf.png")
 }
 
 .unsplash-logo {

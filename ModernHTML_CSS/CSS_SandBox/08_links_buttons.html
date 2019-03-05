@@ -7,9 +7,61 @@
   <title>Links & Buttons</title>
   <style>
     
+   * {
+     padding: 0;
+     margin: 0;
+   }
+
+   body { 
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: url("/ModernHTML_CSS/CSS_SandBox/img/stars.jpg");
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+      z-index: 10;
+    }
+
+    /* a:hover {
+      color: coral;
+      font-size: 40px;
+      font-weight: bolder;
+    } */
+
+    /* When you click on an element */
+    a:active {
+      color: red;
+    }
+
+    .btn {
+      background-color: #4c6ca0;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      padding: 10px 20px;
+      margin: none;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      color: #f4f4f4;
+      background: #446190;
+    }
+
   </style>
 </head>
 <body>
+  <!-- <a href="#">Click Here</a> -->
+  <br>
+  <a href="#" class="btn">My Link</a>
+  <br>
+  <br>
+<button class="btn">My Button</button>
   
 </body>
 </html>

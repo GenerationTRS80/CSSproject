@@ -6,10 +6,63 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Inline & Block Styling</title>
   <style>
+
+  /* To pivot the list horizontally us inline */
+  li {
+    display: inline;
+  }
+
+  li a {
+      padding-right: 20px;
+  }
+
+  /* To center an inline element. Use Display Block */
+  img {
+    display: block;
+    margin: auto;
+  }
+
+    /* NOTE: You need to add Block to use width */
+  .box {
+    box-sizing: border-box;
+    width: 32%;
+    display: inline-block;
+    background: #f4f4f4;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+    
    
   </style>
 </head>
 <body>
+  <ul>
+    <!-- By default list items are block level -->
+    <li><a href="#">Technology</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Fashion</a></li>
+  </ul>
+  <br>
+  <br>
+  <img src="./img/leaf.png" alt="My Image">
   
+  <br>
+  <br>
+
+  <div class="box">
+    <h3>Heading</h3>
+    <p>paleo lomo quinoa bespoke Tumblr art party crucifix keffiyeh pour-over Tonx mumblecore freegan leggings jean shorts swag fixie gastropub blog chia ethical pickled mlkshk meggings Portland squid vegan sriracha chillwave butcher Shoreditch Marfa  </p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>paleo lomo quinoa bespoke Tumblr art party crucifix keffiyeh pour-over Tonx mumblecore freegan leggings jean shorts swag fixie gastropub blog chia ethical pickled mlkshk meggings Portland squid vegan sriracha chillwave butcher Shoreditch Marfa  </p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>paleo lomo quinoa bespoke Tumblr art party crucifix keffiyeh pour-over Tonx mumblecore freegan leggings jean shorts swag fixie gastropub blog chia ethical pickled mlkshk meggings Portland squid vegan sriracha chillwave butcher Shoreditch Marfa  </p>
+  </div>
+
+
 </body>
 </html>

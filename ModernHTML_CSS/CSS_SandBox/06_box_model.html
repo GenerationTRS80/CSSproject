@@ -6,10 +6,47 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Box Model / Margin & Padding</title>
   <style>
+
+    /* CSS Reset  - Remove default padding from ALL elements*/
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .box {
+      background: #f4f4f4;
+      border: 20px solid rgb(123, 218, 59);
+      width: 500px;
+      box-sizing: border-box;
+
+      /* Padding all sides */
+      padding: 20px;
+      margin: 20px;
+
+      /* Padding per side top right bottom left */
+      /*NOTE: The padding below will over write the padding above
+              The last entry takes presedance */
+      padding: 10px 20px;
+
+    }
+
+    .box h3 {
+      padding: 5px 10px;
+    }
     
   </style>
 </head>
 <body>
-  
+<div class="box">
+  <h3>Box One</h3>
+  <p>before they sold out cornhole fixie trust fund 90's quinoa locavore vegan put a bird on it stumptown  freegan roof party Etsy flexitarian wayfarers cred Wes Anderson PBR chillwave polaroid brunch hella street art XOXO Echo Park Portland try-hard swag PBR&B chia selfies photo booth keffiyeh gluten-free fanny pack American Apparel sartorial
+  </p>
+</div>
+<div class="box">
+  <h3>Box Two</h3>
+  <p>before they sold out cornhole fixie trust fund 90's quinoa locavore vegan put a bird on it stumptown  freegan roof party Etsy flexitarian wayfarers cred Wes Anderson PBR chillwave polaroid brunch hella street art XOXO Echo Park Portland try-hard swag PBR&B chia selfies photo booth keffiyeh gluten-free fanny pack American Apparel sartorial
+  </p>
+</div>
 </body>
 </html>

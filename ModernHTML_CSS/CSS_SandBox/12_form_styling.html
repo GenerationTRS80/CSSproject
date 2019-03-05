@@ -15,19 +15,30 @@
         -May want to add "border-box for "box-sizing so padding does not affect width
         -Reset margin and padding 
        */
+       /* NOTE: Added marging width AFTER watching demo */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       /* Get rid if bullet points */
+        list-style: none;
+       
       }
 
       body {
         /* 
           -Background color is #344a72
         */
+        font-family: 'raleway',sans-serif;
+        background: #4e6692;
       }
 
       a {
         /* 
         Underlined links are ugly :)
        */
+       text-decoration: none;
       }
+
 
       #container {
         /* 
@@ -35,69 +46,128 @@
         -I would also set a "max-width" for responsiveness
         -May want to add some padding
         */
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
+        border: 3px #333 solid;
+        /* NOTE: Added after watch demo
+          max-widht set the width of the entry form. It does not adjust when you 
+          change the webpage width */
+        max-width: 400px;
+
       }
 
       .form-wrap {
         /* 
           This is the white area around the form and heading, etc
         */
+        /* background: #f4f4f4; */
+        border: 6px #2fc0ca solid;
       }
 
-      .form-wrap h1,
+      .form-wrap h1 {
+        display: block;
+        height: 40px;
+        /* background: red; */
+        margin: 0px;
+      }
+
       .form-wrap p {
         /* 
           May want to center these
         */
+        line-height: 1.4em;
+        background: greenyellow;
       }
 
       .form-wrap .form-group {
         /* 
           Each label, input is wrapped in .form-group
         */
+        display: block;
+        margin-top: 10px;
+        height: 30px;
+        border: 3px rgb(66, 64, 177) solid;
       }
 
       .form-wrap .form-group label {
         /* 
           Label should be turned into a block element
         */
+        float: left;
+        text-align: left;
+        width: 140px;
+        margin-left: 10px;
+        /* color: red; */
+        background: greenyellow;
       }
 
       .form-wrap .form-group input {
         /* 
           Inputs should reach accross the .form-wrap 100% and have some padding
         */
-      }
+        /* display: inline-block; */
+        float: left;
+        margin-left: 10px;
+        width: 50%;
+        border-radius: 5px;
+      } 
 
       .form-wrap button {
         /* 
           Button should wrap accross 100% and display as block
           Background color for button is #49c1a2
         */
+        margin: 15px 0 10px 0;
+        height: 30px;
+        width: 80%;
+        font-size: 18px;
       }
 
       .form-wrap button:hover {
         /* 
           Hover background color for button is #37a08e
         */
+        color: #5cc242;
+        background: rgb(138, 126, 126);
+        font-weight: bold;
+        cursor: pointer;
       }
 
       .form-wrap .bottom-text {
         /* 
           Bottom text is smaller
         */
+
+        width: 80%;
+        margin: auto;
+        font-size: 12px;
       }
 
       footer {
         /* 
         Should be centered
        */
+        line-height: 1.5em;
+        text-align: center;
+
       }
 
       footer a {
         /* 
           Footer link color is #49c1a2
         */
+        color: #49c1a2;
       }
+
+      footer a:hover {
+        /*
+        Footer link color is #49c1a2
+        */
+        color: #c8e65d;
+      }
+
     </style>
   </head>
   <body>

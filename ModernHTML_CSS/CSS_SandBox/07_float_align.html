@@ -6,10 +6,77 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Float & Align</title>
   <style>
-    
+
+  * {
+    box-sizing: border-box;
+  }
+  .container {
+    /* Use Max width to auto adjust for screen size */
+    max-width: 960px;
+    margin: 30px auto;
+
+  }
+
+  /* Utility class to clear the Float */
+
+  .clr {
+    clear: both;
+  }
+
+  .box {
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    padding: 20px;
+    background: #f4f4f4;
+  }
+  
+  .box p {
+    /* Text Align */
+    text-align: right;
+    text-align: center;
+    text-align: justify;
+  }
+
+  .box h3 {
+    text-align: center;
+  }
+
+  #box-2 {
+    float: left;
+    width: 68%;
+  }
+
+  #box-3 {
+    float: right;
+    width: 30%;
+  }
+
   </style>
 </head>
 <body>
-  
+  <div class="container">
+    <div id="box-1" class="box">
+      <h3>Heading</h3>
+      <p> Thundercats fashion axe banjo kogi direct trade sriracha actually occupy cardigan deep v Shoreditch Williamsburg</p>
+    </div>
+    <div id="box-2" class="box">
+      <h3>Heading</h3>
+      <p>Vice heirloom jean shorts raw denim artisan Pinterest Echo Park American Apparel </p>
+    </div>
+    <div id="box-3" class="box">
+      <h3>Heading</h3>
+      <p>Vice heirloom jean shorts raw denim artisan Pinterest Echo Park American Apparel normcore lomo try-hard bespoke
+        swag </p>
+    </div>
+    
+    <div class="clr"></div>
+
+    <div id="box-4" class="box">
+      <h3>Heading</h3>
+      <p>Vice heirloom jean shorts raw denim artisan Pinterest Echo Park American Apparel normcore lomo try-hard bespoke
+        swag </p>
+    </div>
+  </div>
+
 </body>
 </html>
