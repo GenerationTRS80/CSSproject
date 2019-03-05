@@ -1,0 +1,13 @@
+/* CSS Reset */
+*{
+  margin: 0;
+  padding: 0;
+  /* Prevent padding adding to the width of the box */
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7em;
+}
