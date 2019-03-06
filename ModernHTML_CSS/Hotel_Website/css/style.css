@@ -1,5 +1,6 @@
 /* CSS Reset */
-*{
+
+* {
   margin: 0;
   padding: 0;
   /* Prevent padding adding to the width of the box */
@@ -7,34 +8,42 @@
 }
 
 /* Main Styling */
-html, body {
+
+html,
+body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.7em;
 }
 
 /* Links remove */
+
 a {
   color: #333;
   text-decoration: none;
 }
 
 /* Remove bullet points if any */
+
 li {
   list-style: none;
 }
 
 /* Header padding */
-h1, h2, h3 {
-  padding-bottom: 20px;
 
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
 }
 
 /* Set margins */
+
 p {
   margin: 10px 0;
 }
 
 /* Utility Classes container text-primary lead btn*/
+
 .container {
   margin: auto;
   max-width: 1100px;
@@ -67,6 +76,30 @@ p {
   font-weight: bold;
 }
 
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}
+
+.clr {
+  clear: both;
+}
+
 #navbar {
   background: #333;
   color: #fff;
@@ -75,11 +108,10 @@ p {
 
 #navbar a {
   color: #fff;
-
 }
 
 #navbar h1 {
-   /* Align text or box to the left side */
+  /* Align text or box to the left side */
   float: left;
   font-weight: bold;
   padding-top: 20px;
@@ -108,6 +140,7 @@ p {
 }
 
 /* Showcase */
+
 #showcase {
   background-image: url('/ModernHTML_CSS/Hotel_Website/img/showcase.jpg');
   background-repeat: no-repeat;
@@ -116,7 +149,7 @@ p {
 }
 
 #showcase .showcase-content {
-  color:  #fff;
+  color: #fff;
   text-align: center;
   padding-top: 170px;
 }
@@ -132,5 +165,56 @@ p {
   line-height: 1.2em;
 }
 
+/* Home Info */
 
+#home-info {
+  height: 400px;
+}
 
+#home-info .info-img {
+  float: left;
+  width: 50%;
+  background: url('../img/photo-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Min height 100% make sures the image takes up the whole space */
+  min-height: 100%;
+}
+
+#home-info .info-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  /* If it overflows Scroll bars will not appear */
+  overflow: hidden;
+}
+
+#home-info .info-content p {
+  padding-bottom: 30px;
+}
+
+/* Features */
+
+.box {
+  float: left;
+  width: 33%;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Add margin to bottom of icons */
+
+.box i {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px;
+}
