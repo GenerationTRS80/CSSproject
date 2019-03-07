@@ -7,6 +7,8 @@
   <title>Media Queries</title>
   <style>
   
+    h1 {display: none;}
+
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: lightblue;
@@ -14,6 +16,67 @@
       text-align: center;
       padding-top: 100px;
     }
+
+
+    /* Smart Phones */
+    @media(max-width: 500px) {
+
+      body {
+        background: red;
+      }
+
+      #smartphone h1 {
+      display: block;
+      }
+
+    }
+
+    /* Tablet */
+    @media (min-width: 501px) and (max-width: 768px) {
+
+      body {
+        background: blue;
+        font-size: 18px;
+      }
+
+      #tablet h1 {
+      display: block;
+      }
+
+    }
+
+    /* Normal */
+    @media (min-width: 768px) and (max-width: 1200px) {
+
+      body {
+        background: green;
+        color: #333;
+        font-size: 24px;
+      }
+
+
+      #normal h1 {
+        display: block;
+      }
+
+    }
+
+  /* Normal */
+  @media (min-width: 1200px)  {
+
+    body {
+      background: #333;
+      color: #fff;
+      font-size: 30px;
+    }
+
+
+    #widescreen h1 {
+      display: block;
+    }
+
+  }
+
   </style>
 </head>
 <body>
