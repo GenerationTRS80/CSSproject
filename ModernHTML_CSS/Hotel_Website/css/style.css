@@ -44,7 +44,7 @@ p {
 
 .container {
   margin: auto;
-  max-width: 1100px;
+  max-width: 1320px;
   overflow: auto;
   padding: 0 20px;
 }
@@ -94,7 +94,6 @@ p {
   color: #333;
 }
 
-
 .clr {
   clear: both;
 }
@@ -102,6 +101,7 @@ p {
 /* Heading */
 .l-heading {
   font-size: 40px;
+  line-height: 1.6em;
 }
 
 /* Padding */
@@ -281,6 +281,36 @@ p {
   line-height: 1.3em;
 }
 
+/* Contact Form */
+#contact-form .form-group {
+  margin-bottom: 20px;
+  /* margin-left: 60px; */
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+height: 200px;
+}
+
+/* When input has Focus then change the border color */
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  /* turn off outline hightight */
+  outline: none;
+  border: #f7c08a solid 2px;
+}
 
 /* Footer */
 #main-footer {
