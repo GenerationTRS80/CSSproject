@@ -13,6 +13,10 @@
       margin: 0;
     }
 
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
     li {
       list-style: none;
     }
@@ -21,8 +25,65 @@
       text-decoration: none;
     }
 
-    
+    header {
+    /* NOTE: Use view port height to make the landing backgroup photo take up
+            the whole browser */
+    background: #333 url('./img/Haze_Town_sm.jpg') no-repeat center/cover;
+    color: #fff;
+    /* Don't use height: 100%; */
+    height: 100vh;
+    /* width: 50vw; */
+    text-align: center;
+    padding-top: 16rem;
+    }
+
+    header h1 {
+    font-size: 3rem;
+    }
+
+    header p {
+      margin: 1rem;
+    }
+
+    header .btn {
+      display: inline-block;
+      background: #f4f4f4;
+      border-radius: 10px;
+      color: #333;
+      font-weight: bold;
+      padding: 0.75em 2em;
+      opacity: 0.5;
+    }
   
+    section {
+      padding: 4rem;
+    }
+
+    /* I Pad pro portrait */
+    @media(min-height: 1100px) {
+      header {
+      padding-top: 24rem;
+      }
+    }
+
+    @media(max-height: 700px) and (min-height: 450px) {
+      header {
+        padding-top: 8rem;
+      }
+    }
+
+    @media(max-height: 450px) and (min-height: 370px) {
+      header {
+        padding-top: 6rem;
+      }
+    }
+
+    @media(max-height: 369px) {
+      header {
+        padding-top: 2.5rem;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -31,6 +92,11 @@
     <p>try-hard pork belly Tonx mustache Pinterest chambray bespoke lo-fi quinoa selfies letterpress literally 3 wolf moon asymmetrical polaroid Banksy Carles crucifix banjo ennui +1 gentrify Odd Future four loko keytar cliche chillwave leggings disrupt yr Etsy forage</p>
     <a href="" class="btn">Find Out More</a>
   </header>
+
+  <section>
+    <h3>About our Company</h3>
+    <p>McSweeney's 3 wolf moon Pitchfork distillery occupy freegan flexitarian put a bird on it Tumblr scenester heirloom narwhal quinoa pork belly forage roof party trust fund letterpress tofu DIY mustache dreamcatcher craft beer next level Portland semiotics Intelligentsia wolf vinyl shabby chic vegan synth seitan Pinterest cliche raw denim selvage master cleanse farm-to-table lomo ennui 8-bit VHS photo booth Kickstarter hoodie Bushwick normcore cray deep v locavore Godard Helvetica fashion axe chia PBR&B meh gluten-free wayfarers fingerstache Thundercats mumblecore Williamsburg pour-over plaid iPhone brunch lo-fi skateboard ethical beard art party small batch hashtag bitters Shoreditch</p>
+  </section>
   
 </body>
 </html>
