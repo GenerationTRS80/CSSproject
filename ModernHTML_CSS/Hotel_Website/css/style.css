@@ -94,6 +94,8 @@ p {
   color: #333;
 }
 
+
+
 .clr {
   clear: both;
 }
@@ -123,6 +125,11 @@ p {
   color: #fff;
 }
 
+#navbar .logo {
+  float: left;
+  padding: 20px;
+}
+
 #navbar h1 {
   /* Align text or box to the left side */
   float: left;
@@ -145,12 +152,27 @@ p {
   text-align: center;
 }
 
-#navbar ul li a:hover,
-#navbar ul li a:current {
-  color: aquamarine;
+#navbar ul li .current {
+  color: #f7c08a;
   font-weight: bold;
-  background: #8b0b0b;
+  background: rgb(80, 54, 54);
 }
+
+#navbar ul:hover {
+  background: #333;
+  color: #fff;
+  overflow: auto;
+}
+
+#navbar ul li a:hover {
+  color: #f7c08a;
+  font-weight: bold;
+  background: rgb(80, 54, 54);
+}
+
+
+
+
 
 /* Showcase */
 
@@ -181,7 +203,7 @@ p {
 /* Home Info */
 
 #home-info {
-  height: 400px;
+  height: 550px;
 }
 
 #home-info .info-img {

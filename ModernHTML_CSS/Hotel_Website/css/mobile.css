@@ -1,0 +1,40 @@
+#navbar .logo {
+  float: none;
+  text-align: center; 
+}
+
+#navbar ul,
+#navbar ul li {
+  float: none;
+
+}
+
+#navbar ul li a {
+  padding: 5px;
+  border-bottom: #444 dotted 1px;
+}
+
+/* Add extra padding to the bottom of last element */
+#navbar ul li:last-child {
+  padding-bottom: 25px;
+}
+
+/* Home Info */
+#home-info .info-img {
+  display: none;
+}
+
+#home-info .info-content {
+  float: right;
+  width: 100%;
+}
+
+/* Boxes */
+.box {
+  float:none;
+  width: 100%;
+}
+
+#showcase {
+  /* margin-top: 10px; */
+}
