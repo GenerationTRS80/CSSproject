@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex Align</title>
+  <style>
+    .container {
+      /*  Align items horiontally must have a width
+          Align items vertically musy have a height */
+      background: #555;
+      display: flex;
+      /* Align flex boxes to the left*/
+      /* justify-content: flex-start; */
+      /* Align flex boxes to the right */
+      /* justify-content: flex-end; */
+      /* Evenly space boxes within the web page */
+      /* justify-content: space-around;*/
+      justify-content: space-evenly;
+      height: 600px;
+      align-items: stretch;
+      /* Align items to the bottom */
+      align-items: flex-end;
+      align-items: center;
+    }
+
+    .item{
+      background: #f4f4f4;
+      border: #ccc solid 1px;
+      text-align: center;
+      padding: 1rem;
+      margin: 0.5rem;
+      /* width: 300px same as basis*/
+      flex-basis: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item item-1"><h3>Item 1</h3></div>
+    <div class="item item-2"><h3>Item 2</h3></div>
+    <div class="item item-3"><h3>Item 3</h3></div>
+  </div>
+
+</body>
+</html>
