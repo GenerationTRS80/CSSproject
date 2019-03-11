@@ -27,10 +27,20 @@ p {
   color: #93cb52;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .l-heading {
   font-size: 3rem;
   margin-bottom: 0.75rem;
   line-height: 1.1rem;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  line-height: 2.2rem;
 }
 
 .lead {
@@ -38,24 +48,18 @@ p {
   margin-bottom: 2rem;
 }
 
-.btn {
-  display: inline-block;
-  color: #fff;
-  background: #93cb52;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
 }
 
-.btn:hover {
-  color: #333;
-  font-weight: bolder;
-  font-size: 1.5rem;
-  background: #cb525c;
-  padding: 15px;
-}
+.pad-y1 { padding: 1.5rem 0;}
+.pad-y2 { padding: 2rem 0;}
+.pad-y3 { padding: 3rem 0;}
 
-/* Utility Color Class */
+
 .btn-dark {
   background: #333;
   color: #fff;
@@ -126,3 +130,39 @@ p {
   background: rgba(0,0,0,0.4);
 }
 
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #93cb52;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  color: #333;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  background: #cb525c;
+  padding: 15px;
+}
+
+
+/* Section what we do */
+#what .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Target Icon */
+#what .items .item i {
+  background: #93cb52;
+  padding: 1rem;
+  border-radius: 50%;
+}
