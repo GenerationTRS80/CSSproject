@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
 * {
-
   padding: 0;
   margin: 0;
-  
 }
 
 body {
-  font-family: 'Roboto',
-  sans-serif;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
 }
 
 /* li {
@@ -25,11 +22,47 @@ p {
 }
 
 /* Utility Classes */
+
 .text-primary {
-  color:  #93cb52;
+  color: #93cb52;
+}
+
+.l-heading {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1rem;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #93cb52;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  color: #333;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  background: #cb525c;
+  padding: 15px;
+}
+
+/* Utility Color Class */
+.btn-dark {
+  background: #333;
+  color: #fff;
 }
 
 /* Navbar */
+
 #navbar {
   display: flex;
   justify-content: space-between;
@@ -53,7 +86,7 @@ p {
   /* Area between list items */
   padding: 0.75rem;
   /* Margin left and right*/
-  margin: 0 0.25rem; 
+  margin: 0 0.25rem;
 }
 
 #navbar ul li a:hover {
@@ -62,3 +95,34 @@ p {
   font-weight: bolder;
   border-radius: 10px;
 }
+
+/* Showcase */
+
+#showcase {
+  /* With out VH The image only covers the content */
+  height: 100vh;
+  color: #fff;
+  background: #333 url('../img/showcase.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  /* is 100% height of the container */
+  height: 100%;
+  /* Align Items vertical */
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  /* Overlay */
+  /* position: absolute; */
+  /* Start below the Navbar for the overlay */
+  top: 60px;
+  left: 0;
+  background: rgba(0,0,0,0.4);
+}
+
