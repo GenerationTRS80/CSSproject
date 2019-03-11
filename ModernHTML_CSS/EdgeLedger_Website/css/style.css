@@ -59,10 +59,46 @@ p {
 .pad-y2 { padding: 2rem 0;}
 .pad-y3 { padding: 3rem 0;}
 
+.pad-1 {
+  padding: 1.5rem;
+}
+
+.pad-2 {
+  padding: 2rem;
+}
+
+.pad-3 {
+  padding: 3rem;
+}
+
 
 .btn-dark {
   background: #333;
   color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem;
+  border: #444 dotted 1px;
+}
+
+.list li a {
+  padding-left: 0.8rem;
 }
 
 /* Navbar */
@@ -166,3 +202,39 @@ p {
   padding: 1rem;
   border-radius: 50%;
 }
+
+/* Section: Who we are */
+#who {
+  display: flex;
+}
+
+/* Split the section in half by having the img div and who-text div each have a flex box */
+#who div {
+  flex: 1;
+}
+
+#who .who-img {
+  background-image: url('../img/people.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+#who .who-text h3{
+  margin-bottom: 0.8rem;
+}
+
+/* Clients */
+
+#clients .items {
+  display: flex;
+}
+
+#clients .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+
