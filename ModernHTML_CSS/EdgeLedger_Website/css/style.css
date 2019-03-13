@@ -71,12 +71,6 @@ p {
   padding: 3rem;
 }
 
-
-.btn-dark {
-  background: #333;
-  color: #fff;
-}
-
 .bg-light {
   background: #f4f4f4;
   color: #333;
@@ -84,6 +78,11 @@ p {
 
 .bg-dark {
   background: #333;
+  color: #fff;
+}
+
+.bg-primary{
+  background: #93cb52;
   color: #fff;
 }
 
@@ -237,4 +236,30 @@ p {
   width: 60%;
 }
 
+/* Section Contact */
+#contact {
+  display: flex;
 
+}
+
+#contact .contact-form,
+#contact .map {
+  flex: 1;
+  
+}
+
+#contact .contact-form .form-group {
+  margin: 0.75rem;
+  
+}
+
+#contact .contact-form label {
+  display: block;
+  box-sizing: border-box;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;  
+}
