@@ -1,0 +1,140 @@
+#what .items {
+  display: block;
+  padding: 1rem;
+}
+
+/* Align Icon to left */
+#what .items .item {
+  display: flex;
+  text-align: left;
+}
+
+#what .items .item div h3,
+#what .items .item div p
+ {
+  text-align: left;
+}
+
+#what .items .item i {
+  margin-right: 1.3rem;
+  align-self: center;
+  margin-bottom: 0;
+}
+
+/* Smart Phones */
+@media(max-width: 500px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navbar .logo {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  #navbar ul {
+    padding: 0.5rem;
+  }
+
+  /* Mobile Showcase */
+  #showcase .showcase-content {
+    top: 80px;
+  }
+
+  .l-heading {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    line-height: 0.8rem;
+  }
+
+  .m-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 2.2rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Remove image from Who We Are section and
+      fill it with block on right*/
+  #who {
+    display: block;
+  }
+
+  #who .who-img {
+    display: none;
+  }
+
+  #clients .items img {
+    width: 50%;
+  }
+
+  #clients .items div:last-child {
+    display: none;
+  }
+
+  /* Stack contact and map with contact above*/
+  #contact {
+    flex-direction: column;
+  }
+
+  #contact .map {
+    height: 200px;
+    border-top: 4px solid #333;
+  }
+
+  @media(max-height: 568px) {
+
+    #showcase .showcase-content {
+      top: 60px;
+    }
+
+    .l-heading {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+      line-height: 0.8rem;
+    }
+
+    .m-heading {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      line-height: 2.2rem;
+    }
+
+    .lead {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+  }
+
+    @media(max-height: 355px) {
+
+      #showcase .showcase-content {
+        top: 60px;
+      }
+
+      #showcase .showcase-content .l-heading {
+        font-size: 0.3rem;
+        margin-bottom: 0.5rem;
+        line-height: 0.8rem;
+      }
+
+      .m-heading {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+        line-height: 2.2rem;
+      }
+
+      .lead {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+
+    }
+
+}
