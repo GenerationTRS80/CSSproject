@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nth Child</title>
+  <style>
+    li {
+      margin: 0.25rem;
+      padding: 0.5rem;
+      padding-left: 1rem;
+      list-style: none;
+      border-radius: 10px;
+    }
+  
+    /* first-child */
+    li:first-child {
+      color:violet;
+      background: #333;
+      font-weight: bold;
+      width: 20%;
+    }
+
+    /* first-child */
+    li:last-child {
+      color:#333;
+      background: violet;
+      font-weight: bold;
+      width: 20%;
+      border: #333 dotted 2px;
+    }
+
+    /* Position 3 */
+    li:nth-child(3) {
+      color:rgb(31, 182, 99);
+      background: #333;
+      font-weight: bold;
+      width: 20%;
+      border: rgb(31, 182, 99) dotted 2px;
+    }
+
+    /* Position Every 4th 0 is the offset */
+    li:nth-child(2n+8) {
+      color:rgb(31, 18, 99);
+      background: #f4f4f4;
+      font-weight: bold;
+      width: 20%;
+      border: rgb(65, 100, 36) dotted 2px;
+    }
+
+    /* Position Odd */
+    li:nth-child(odd) {
+      color:rgb(65, 100, 36);
+      background: aqua;
+      font-weight: bold;
+      width: 20%;
+      border: rgb(31, 18, 99) dotted 2px;
+    }
+
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li>Item 6</li>
+    <li>Item 7</li>
+    <li>Item 8</li>
+    <li>Item 9</li>
+    <li>Item 10</li>
+    <li>Item 11</li>
+    <li>Item 12</li>
+    <li>Item 13</li>
+    <li>Item 14</li>
+    <li>Item 15</li>
+    <li>Item 16</li>
+    <li>Item 17</li>
+    <li>Item 18</li>
+    <li>Item 19</li>
+    <li>Item 20</li>
+  </ul>
+  
+</body>
+</html>
