@@ -6,6 +6,37 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Targeted Selectors</title>
   <style>
+    /* Direct child of the div */
+    div > p {
+      background: #ddd;
+    }
+
+    /* Directly after element */
+    div + p {
+      color: #f4f4f4;
+      background: #333;
+    }
+
+    a[target='self'] {
+      background: red;
+      color: white;
+    }
+
+    /* Specifi Attribute */
+    input[type='text'],
+    input[type='email'] {
+      width: 100%;
+      margin-bottom: 10px;
+      border:turquoise solid 3px;
+    }
+
+    /* input {
+      width: 100%;
+      margin-bottom: 10px;
+    } */
+
+
+
   </style>
 </head>
 <body>
@@ -22,5 +53,18 @@
   </div>
 
   <p>sustainable hoodie skateboard Cosby sweater American Apparel selfies yr scenester brunch post-ironic </p>
+
+  <a href="#">Page 1</a> <a href="#" target="self">Page 2</a>
+
+  <a href="https://google.com" target="blank">Google</a>
+
+  <br><br>
+
+  <form>
+    <input type="text" Placeholder="Name">
+    <input type="email" Placeholder="Email">
+    <input type="submit" value="submit">
+    
+  </form>
 </body>
 </html>
