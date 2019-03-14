@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Before After Selector</title>
+  <style>
+
+    .is-required::after {
+      /* Insert the * through CSS */
+      content: '*';
+      color: red;
+      padding-left: 2px;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #333;
+      color: #f4f4f4;
+      margin: 0;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+
+    }
+
+    header::before  {
+      /* Insert content into the page */
+      content: '';
+      background-image: url('https://source.unsplash.com/1600x900/?nature,water');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.4;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+
+
+    header h1 {
+      font-size: 4rem;
+      margin: 1rem;
+    }
+  
+  </style>
+</head>
+<body>
+  
+  <!-- <label for="name" class="is-required">Name</label>
+  <input type="text"> -->
+
+<header>
+  <h1>Hello World</h1>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, ullam.</p>
+</header>
+<section>
+  <h3>Lorem, ipsum dolor.</h3>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae possimus soluta aut officiis. Dolores, numquam! Adipisci illum iure itaque? Ratione eos deserunt fugit laboriosam delectus id pariatur ipsam dicta ipsa?</p>
+</section>
+
+</body>
+</html>
