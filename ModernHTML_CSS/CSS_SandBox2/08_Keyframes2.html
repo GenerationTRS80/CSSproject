@@ -12,16 +12,52 @@
     }
 
     .box {
-      color: #fff;
+      background: #fff;
       height: 200px;
       width: 200px;
       position: relative;
     }
 
     .animation {
-      animation: animate1;
+      top: 0;
+      left: 0;
+      animation: animate1 5s forwards ease-in-out;
 
     }
+
+    @keyframes animate1 {
+      /* Percentage are based on time */
+      25% {
+        top: 0;
+        left: 300px;
+        background: blue;
+        border-radius: 50% 0 0 0;
+      }
+
+      /* Move right and down */
+      50% {
+        top:300px;
+        left:300px;
+        background: red;
+        border-radius: 50% 50% 0 0;
+      }
+
+      /* Move from right down to down and back left*/
+      75% {
+        top: 300px;
+        left: 0;
+        background: green;
+        border-radius: 50% 50% 50% 0;
+      }
+
+      /* Return to its place origin */
+      100% {
+        top: 0;
+        left: 0;
+        background: white;
+        border-radius: 50% 50% 50% 50%;
+      }
+
 
 </style>
 </head>
