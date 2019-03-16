@@ -24,21 +24,29 @@
     }
 
     .box:hover {
-
+      transform: rotate(180deg);
+      transform: skew(25deg);
+      transform: scale(2);  
+      transform: translateY(100px);
+      transform: translateX(500px);
+      transform: translate(100px,-330px);
+      transform: translate3d(100px,-330px, 45px);
     }
 
-    .trasition {
-      transition: all 2s ease-in-out;
+    .transition {
+      transition: all 3s ease-in-out;
 
     }
 
     .transformation {
-      transform: rotate(25deg);
+      /* transform: rotate(25deg); */
+      
+      transform: scale(2);
     }
   
   </style>
 </head>
 <body>
-  <div class="box trasition transformation"></div>
+<div class="box transition"></div>
 </body>
 </html>
