@@ -15,12 +15,46 @@
       background: #fff;
       height: 200px;
       width: 200px;
+      position: relative;
     }
   
+    .animation {
+      animation: animate1 5s forwards 2s ease-in-out;
+
+    }
+
+
+    .animation_detail {
+      animation-name: animate1;
+      animation-duration: 5s;
+      animation-iteration-count: 4;
+      /* animation-iteration-count: infinite; */
+
+      /* Forwards keeps the animation streched out */
+      animation-fill-mode: forwards;
+      /* animation-delay: 3s; */
+      animation-direction: alternate-reverse;
+
+      /* Timing function how it animates or moves */
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes animate1 {
+      from {
+        top: 0;
+        width: 200px;
+        background: red;
+      }
+
+      to {
+        width: 600px;
+        top: 300px;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="box"></div>
+  <div class="box animation"></div>
   
 </body>
 </html>
