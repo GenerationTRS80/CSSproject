@@ -7,7 +7,8 @@
   --color-lightyellow: rgb(202, 192, 46);
   --color-white: #fff;
   --color-grey: #333;
-  --animate-speed: 1s;
+  --animate-speed: 2s;
+  --animate-delay: 1s;
 
 }
 
@@ -39,13 +40,13 @@ body {
 }
 
 .page h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   line-height: 1.2rem;
   margin: 1rem;
 }
 
 .page p{
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .btn {
@@ -68,9 +69,37 @@ body {
   font-weight: bold;
 }
 
-
 .btn-dark:hover {
   background: var(--color-lightyellow);
   color: var(--color-lightgrey);
   font-weight: bold;
+}
+
+/* Page Animation */
+#page-1 h1 {
+  transform: translateY(-1200px);
+  animation: heading var(--animate-speed) forwards ease-in;
+}
+
+#page-1 p {
+  transform: translateX(-1800px);
+  animation: text var(--animate-speed) forwards ease-in var(--animate-delay);
+}
+
+
+/* Keyframes */
+@keyframes heading {
+  /* Go back to original space */
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes */
+@keyframes text {
+
+  /* Go back to original space */
+  to {
+    transform: translateX(0);
+  }
 }
