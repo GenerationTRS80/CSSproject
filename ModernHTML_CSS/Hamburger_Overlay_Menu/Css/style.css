@@ -1,0 +1,95 @@
+
+:root {
+  /* RGBA add transparency */
+  --primary-color: rgba(13,110,139, 0.50);
+  --primary-color-fill: rgba(13,110,139, 0.9);
+  --secondary-color: rgba(229,148,0,0.9);
+  --overlay-color: rgba(24,39,51,0.85);
+  --whitetext-color: #fff;
+  --menu-speed: 0.75s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+ font-family: 'Roboto',San-Serif;
+ line-height: 1.4;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+
+}
+
+#showcase {
+  background: var(--primary-color);
+  color: var(--whitetext-color);
+  height: 100vh;
+  position: relative;
+  border: solid #333 3px;
+}
+
+/* Create transparency background image */
+#showcase::before {
+  content: '';
+  background: url(../img/Hwy1_Coast.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* Start at top corner and span all the way across */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#showcase .showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* Pushdown text 100% of its parent height*/
+  height: 100%;
+  border: solid red 3px;
+}
+
+#showcase h1 {
+  font-size: 4rem;
+}
+
+#showcase p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border: none;
+  font-size: 1.2rem;
+  background: var(--primary-color);
+  color: var(--whitetext-color);
+  padding: 0.75rem 1.5rem;
+  z-index: 10;
+  transition: all 3s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.4;
+}
+
+.btn span:hover {
+  color: var(--secondary-color);
+  font-weight: bolder;
+  opacity: initial;
+}
