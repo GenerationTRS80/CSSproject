@@ -4,6 +4,7 @@
   --Slice-PositionTop: 7px;
   --Slice-PositionBottom: -7px;
   --Opacity-Checkbox: 0;
+  --TransitionTime-HamburgerToCheckbox: 0.6s;
 }
 
 .menu-wrap {
@@ -51,6 +52,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all var(--TransitionTime-HamburgerToCheckbox) ease-in-out;
 }
 
 /* Hamburger Lines - Top and Bottom Lines */
@@ -59,6 +61,7 @@
   content: '';
   position: absolute;
   z-index: 1;
+  /* Moves line down */
   top: var(--Slice-PositionBottom); 
   width: 100%;
   height: var(--Slice-thickness);
@@ -66,5 +69,24 @@
 }
 
 .menu-wrap .hamburger>div::after {
+  /* Moves line top */
   top: var(--Slice-PositionTop);
+}
+
+/* Toggler Animation */
+/* Target state of checked */
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* Tursn Hamburger into an X */
+.menu-wrap .toggler:checked +.hamburger>div:before,
+.menu-wrap .toggler:checked +.hamburger>div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Rotate on Hover when checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
 }
