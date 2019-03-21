@@ -115,3 +115,23 @@ h1 {
   /* Change shape to an arrow */
   border-color: transparent transparent transparent var(--secondary-color);
 }
+
+
+/* @media(max-width: 900px) {
+
+  #timeline ul li div {
+    width: 240px;
+  }
+
+  #timeline ul li:nth-child(even) div {
+    left: -284px;
+
+  }
+}
+
+@media(max-width: 600px) {
+
+  #timeline ul li {
+    margin-left: 20px;
+  }
+} */
