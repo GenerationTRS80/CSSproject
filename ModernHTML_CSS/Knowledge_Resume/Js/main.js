@@ -1,6 +1,5 @@
-
 /*jshint esversion: 6 */
-const items = document.querySelectorAll('timeline li');
+const items = document.querySelectorAll('#timeline li');
 
 const isInViewport = el => {
   const rect = el.getBoundingClientRect();
@@ -13,7 +12,6 @@ const isInViewport = el => {
   );
 };
 
-// Loop through the items
 const run = () =>
   items.forEach(item => {
     if (isInViewport(item)) {
