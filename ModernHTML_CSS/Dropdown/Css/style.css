@@ -1,3 +1,13 @@
+:root{
+  --primary-color: coral;
+  --secondary-color: chocolate;
+  --background-light: #f4f4f4;
+  --background-offWhite: #e7e7e7;
+  --background-offWhite2:#e0e0e0;
+  --TextLight-color: #fff;
+  --TextDark-color: #333;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -8,12 +18,12 @@
 
 html,
 body {
-  background: #f4f4f4;
+  background: var(--background-light);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 #navbar ul li {
-  color: #333;
+  color: var(--TextDark-color);
   /* Position in a line */
   display: inline-block;
   padding: 1rem;
@@ -21,7 +31,7 @@ body {
 }
 
 #navbar ul li a {
-  color: #333;
+  color: var(--TextDark-color);
 
 }
 
@@ -33,12 +43,12 @@ body {
 /* Cursor over navbar */
 #navbar ul li:hover {
   cursor: pointer;
-  background: coral;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--TextLight-color);
 }
 
 #navbar ul li:hover a {
-  color: #fff;
+  color: var(--TextLight-color);
 }
 
 /* Nested ULto show */
@@ -53,22 +63,22 @@ body {
 
 #navbar ul li:hover ul li {
   display: block;
-  background: #e7e7e7;
+  background: var(--background-offWhite);
 }
 
 #navbar ul li:hover ul li a {
-  color: #333;
+  color: var(--TextDark-color);
 }
 
 #navbar ul li:hover ul li:hover {
-  background: #e0e0e0;
+  background: var(--Background-OffWhite2);
   color: inherit;
 }
 
 #navbar ul li:hover ul li span {
   float: right;
-  color: #fff;
-  background: coral;
+  color: var(--TextLight-color);
+  background: var(--primary-color);
   padding: 0.2rem 0.5rem;
   text-align: center;
   font-size: 0.8rem;
@@ -76,5 +86,21 @@ body {
 }
 
 #navbar ul li:hover ul li:hover span {
-  background: chocolate;
+  background: var(--secondary-color);
+}
+
+#showcase {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+  background: var(--primary-color);
+}
+
+#showcase h1 {
+  color: var(--TextLight-color);
+  font-size: 4rem;
 }
