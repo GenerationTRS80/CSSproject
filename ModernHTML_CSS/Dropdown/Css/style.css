@@ -1,9 +1,10 @@
 :root{
   --primary-color: coral;
-  --secondary-color: chocolate;
+  --secondary-color: rgb(167, 79, 16);
   --background-light: #f4f4f4;
   --background-offWhite: #e7e7e7;
   --background-offWhite2:#e0e0e0;
+  --background-grey:rgba(192, 171, 171,0.7);
   --TextLight-color: #fff;
   --TextDark-color: #333;
 }
@@ -66,29 +67,35 @@ body {
   background: var(--background-offWhite);
 }
 
+
+/* Dropdown list item: text color */
 #navbar ul li:hover ul li a {
   color: var(--TextDark-color);
 }
 
+/* Dropdown list item:  selection background color*/
 #navbar ul li:hover ul li:hover {
-  background: var(--Background-OffWhite2);
+  background: var(--background-grey);
   color: inherit;
 }
 
+/* Button in dropdown list */
 #navbar ul li:hover ul li span {
   float: right;
   color: var(--TextLight-color);
-  background: var(--primary-color);
+  background: var(--TextDark-color);
   padding: 0.2rem 0.5rem;
   text-align: center;
   font-size: 0.8rem;
   border-radius: 5px;
 }
 
+/* Button hover color */
 #navbar ul li:hover ul li:hover span {
   background: var(--secondary-color);
 }
 
+/* Showcase */
 #showcase {
   display: flex;
   flex-direction: column;
