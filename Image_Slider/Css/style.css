@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+  --Color-DarkGrey: #333;
+  --Color-TextWhite: #fff;
+  --Color-SlideContent: rgba(255,255,255,0.8);
+  --Color-ButtonFill: rgba(255, 255, 255, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--Color-DarkGrey);
+  color: var(--Color-TextWhite);
+  line-height: 1.6rem;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4 ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  padding: 35px;
+  background: var(--Color-SlideContent);
+  color: var(--Color-DarkGrey);
+}
+
+.slide .content h1 {
+
+  margin-bottom: 15px;
+}
+
+
+.slide.current .content {
+  opacity: 1;
+  /* Move the text back to the right */
+  transform: translateX(600px);
+  /* last property is the delay */
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid var(--Color-TextWhite);
+  background-color: transparent;
+  color: var(--Color-TextWhite);
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+}
+
+.buttons button:hover {
+  background: var(--Color-ButtonFill);
+  color: var(--Color-DarkGrey);
+  font-weight: bold;
+}
+
+/* Background Images */
+.slide:first-child {
+  background: url('../Img/Desert_Xmas_sm.jpg') no-repeat center center/cover;
+  /* background: url('../Img/Desert_Xmas_sm.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -140px; */
+}
+
+.slide:nth-child(2) {
+  background: url('../Img/Flower_PDX_sm.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top; 
+}
+.slide:nth-child(3) {
+  background: url('../Img/OSHU_sw_waterfront_sm.jpg');
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center; 
+}
+.slide:nth-child(4) {
+  background: url('../Img/Psychedelic_Mountain_sm.jpg');
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center; 
+}
+.slide:nth-child(5) {
+  background: url('../Img/SandPiper_sm.jpg');
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center; 
+}
+.slide:nth-child(6) {
+  background: url('../Img/snow_crosswater_sm.jpg');
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center; 
+}
