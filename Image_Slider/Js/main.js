@@ -1,7 +1,8 @@
 /*jshint esversion: 6 */
+// querySelectorAll allow you to select multiple elements
 const slides = document.querySelectorAll('.slide');
-const next = document.querySelectorAll('#next');
-const prev = document.querySelectorAll('#prev');
+const next = document.querySelector('#next');
+const prev = document.querySelector('#prev');
 const auto = false;
 const intervalTime = 5000;
 let slideInterval;
@@ -19,28 +20,37 @@ const nextSlide = () => {
   } else {
     // Add current to start 
     // Note: 0 is the start of the index of the array
-    slide[0].classList.add('current');
+    slides[0].classList.add('current');
   }
   // Remove class with delay
   setTimeout(()=>current.classList.remove('current'));
 };
 
 // Previous slide function  
-const previousSlide = () => {
+const prevSlide = () => {
   // Get current class
   const current = document.querySelector('.current');
   // Remove current class
   current.classList.remove('current');
   // Check for previous slide
   if (current.previousElementSibling) {
-    // Add current sibling to previous sibling
+    // Add current class to previous sibling
     current.previousElementSibling.classList.add('current');
   } else {
     // Get the very last slide
     // Note: 0 is the start of the index of the array
     slide[slides.length-1].classList.add('current');
   }
+  
   // Remove class with delay
-  setTimeout(()=>current.classList.remove('current'));
+  setTimeout(()=>current.classList.remove('current'),200);
 };
 
+// Button events
+next.addEventListener('click', e => {
+  nextSlide();
+});
+
+prev.addEventListener('click', e => {
+  prevSlide();
+});
