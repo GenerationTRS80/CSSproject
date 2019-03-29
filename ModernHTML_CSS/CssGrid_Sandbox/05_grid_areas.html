@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Grid Areas</title>
+
+  <style>
+    .container {
+      display: grid;
+      grid-template-areas: 
+      'header header header'
+      'tcontent tcontent sidebar'
+      'box-1 box-2 box-2'
+      'box-3 box-3 box-3'
+      'footer footer footer';
+      grid-gap: 1rem;
+    }
+
+    .header {
+      grid-area: header;
+      text-align: center;
+    }
+
+    .tcontent {
+      grid-area: tcontent;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+    }
+
+    .box-1 {
+      grid-area: box-1;
+    }
+
+    .box-2 {
+      grid-area: box-2;
+    }
+
+    .box-3 {
+      grid-area: box-3;
+    }
+
+    .footer {
+      grid-area: footer;
+      text-align: center;
+    }
+
+    header,
+      .tcontent,
+      .sidebar,
+      .box-1,
+      .box-2,
+      .box-3,
+      .footer {
+        border: 1px #ccc solid;
+        padding: 0.5rem;
+      }
+
+    @media(max-width: 550px) {
+
+      .container {
+        grid-template-areas:
+        'header'
+        'tcontent'
+        'sidebar'
+        'box-1'
+        'box-2'
+        'box-3'
+        'footer';
+      }
+
+    } 
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>My Website</h1>
+    </header>
+    <section class="tcontent">
+      <h3>Welcome to my site</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, distinctio voluptate eveniet omnis id labore autem. Et magni inventore dignissimos sed eius quisquam atque quos ipsam culpa unde molestias obcaecati optio nihil fugiat blanditiis repellendus provident, porro officiis corporis quia</p>
+    </section>
+    <aside class="sidebar">
+      <h3>Contact Us</h3>
+      <ul>
+        <li>Company</li>
+        <li>50 Main St, Boston MA</li>
+        <li>something@something.com</li>
+        <li>555-555-5555</li>
+      </ul>
+    </aside>
+    <div class="box-1">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eveniet qui ad dolore rerum. Fuga quas sit maxime, temporibus nihil quo provident commodi voluptate earum quos! Corrupti ipsa exercitationem, iure sapiente totam labore nihil, quia quae sit officia aliquam ipsum provident rem voluptatem quas harum voluptates magni cum earum necessitatibus voluptatum? Veritatis odio nesciunt aut deleniti officia excepturi, repudiandae voluptas!
+      </p>
+    </div>
+    <div class="box-2">
+      <h3>Heading</h3>
+      <p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, vel laboriosam excepturi in culpa dolorum ipsam beatae quos aliquam sapiente consectetur voluptatum harum hic perspiciatis eos placeat tempora commodi doloremque deleniti odio ratione autem! Ullam culpa tenetur nobis qui, voluptates ea possimus eligendi eius delectus perferendis deleniti ipsum vitae alias modi labore eos porro laborum in, tempora provident! Ratione, facere?
+      </p>
+    </div>
+    <div class="box-3">
+      <h3>Heading</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae itaque rerum aliquam sit soluta quaerat, aspernatur voluptates quia libero tempore deserunt placeat ducimus repellendus temporibus fugit dolores quae ipsam consectetur necessitatibus ad id. Quae nobis molestiae laudantium excepturi dolorem? Cumque commodi omnis voluptate quod fuga tempore libero, necessitatibus doloremque, modi incidunt officiis voluptatem blanditiis hic similique quidem neque maiores dolorem.
+      </p>
+    </div>
+  </div>
+  <footer><p>Copyright &copy; 2019</p></footer>
+  
+</body>
+</html>
