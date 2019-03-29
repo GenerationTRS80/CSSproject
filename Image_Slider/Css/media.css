@@ -1,0 +1,11 @@
+.slide .content {
+  bottom: -300px;
+  left: 0;
+  width: 100%;
+
+}
+
+.slide.current content {
+  /* Come up from the bottom */
+  transform: translateY(-300px);
+}
