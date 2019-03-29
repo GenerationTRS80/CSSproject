@@ -3,7 +3,7 @@
 const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
-const auto = false;
+const auto = true;
 const intervalTime = 5000;
 let slideInterval;
 
@@ -41,7 +41,7 @@ const prevSlide = () => {
     // Note: 0 is the start of the index of the array
     slide[slides.length-1].classList.add('current');
   }
-  
+
   // Remove class with delay
   setTimeout(()=>current.classList.remove('current'),200);
 };
@@ -49,8 +49,22 @@ const prevSlide = () => {
 // Button events
 next.addEventListener('click', e => {
   nextSlide();
+  if (auto) {
+    // Run at interval time
+    slideInterval = setInterval(nextSlide, intervalTime);
+  }
 });
 
 prev.addEventListener('click', e => {
   prevSlide();
+  if (auto) {
+    // Run at interval time
+    slideInterval = setInterval(nextSlide, intervalTime);
+  }
 });
+
+// Auto slide
+if (auto) {
+  // Run at interval time
+  slideInterval = setInterval(nextSlide, intervalTime);
+}
