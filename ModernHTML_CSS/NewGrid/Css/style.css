@@ -1,0 +1,105 @@
+:root {
+  --Color-Primary: #c72727;
+  --Color-Secondary: #f99550;
+  --Color-TextWhite: #fff;
+  --Color-DarkGrey: #333;
+  --Color-LightGrey: #a09a9a;
+  --Color-TextLightGrey: #f4f4f4;
+  --Width-Max: 1100px;
+}
+
+.category {
+  --Color-Sports: #f99550;
+  --Color-Entertainment: #a66bbe;
+  --Color-Techology: #000cff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  background: var(--Color-LightGrey);
+}
+
+a {
+  color: var(--Color-DarkGrey);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  /* Need to be 100% of thier containers */
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Staachliches', cursive;
+  margin-bottom: 0.55rem;
+  line-height: 1.3;
+}
+
+/* Utility Class */
+.container {
+  max-width: var(--Width-Max);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+/* Navigation  */
+#main-nav {
+  background: var(--Color-TextWhite);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#main-nav .container {
+  display: grid;
+  grid-template-columns: 6fr 3fr 3fr; 
+  padding: 1rem;
+  align-items: center;
+}
+
+#main-nav .logo {
+  width: 180px;
+}
+
+#main-nav ul {
+  justify-self: end;
+  display: flex;
+}
+
+#main-nav ul li a {
+  padding: .75rem;
+  font-weight: bold;
+}
+
+#main-nav ul li a.current {
+  background: var(--Color-Primary);
+  color: var(--Color-TextWhite);
+}
+
+#main-nav ul li a:hover {
+  background: var(--Color-LightGrey);
+  color: var(--Color-Primary);
+  font-weight: bold;
+}
+
+#main-nav .social {
+  /* Use justify-self when NOT using flex of grid */
+  justify-self: center;
+}
+
+#nav-main .social i {
+  color: #777;
+  margin-right: .5rem;
+}
