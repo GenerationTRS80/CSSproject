@@ -6,6 +6,7 @@
   --Color-MediumGrey: #444;
   --Color-LightGrey: #a09a9a;
   --Color-TextLightGrey: #f4f4f4;
+  --Color-OffWhite: #eee;
   --Width-Max: 1100px;
 }
 
@@ -161,6 +162,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 90%;
 }
 
+.l-heading {
+  font-size: 3rem;
+}
+
+
 #main-footer .footer-container li a:hover {
   color: var(--Color-Primary);
 }
@@ -289,6 +295,21 @@ first child of #home-articles .article-container */
 #home-articles .articles-container > *:last-child {
   grid-column: 2 / span 2;
 }
+
+/* Use flex for inner menu's NOT page layout */
+#article .meta {
+  display: flex;
+  /* Pushed button to right side and  */
+  justify-content: space-between;
+  align-items: center;
+  background: var(--Color-OffWhite);
+  padding: 0.5rem 0.75rem;
+}
+
+#article .meta .category {
+  margin-top: 0.4rem;
+}
+
 
 /* Footer */
 #main-footer {
