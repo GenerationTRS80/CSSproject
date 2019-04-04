@@ -7,3 +7,4 @@
 *.png
 *.psd
 *.ico
+/ModernHTML_CSS/SASS_Sandbox/node_modules
