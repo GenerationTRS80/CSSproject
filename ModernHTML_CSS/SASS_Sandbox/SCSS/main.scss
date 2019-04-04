@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto|Staatliches');
+@import 'variables';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: $light-color;
+  color: $dark-color;
+  font-family: $font-Staat;
+  line-height: 1.5;
+}
+
+header {
+  background: $dark-color;
+  color: $light-color;
+  padding: 1rem;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.section {
+  padding: 3rem;
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  &-a {
+    background: $primary-color;
+    color: $color-textWhite;
+  }
+
+  &-b {
+    background: $secondary-color;
+    color: $color-textWhite;
+  }
+
+}
+
+a {
+  color: $dark-color;
+  &:hover {
+    color: coral;
+  }
+}
+
+// Shared Styles
+%btn-shared {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn {
+  &-light {
+    @extend %btn-shared;
+    background: $light-color;
+    color: #333;
+  }
+
+  &-dark {
+    @extend %btn-shared;
+    background-color: $dark-color;
+    color: #fff;
+  }
+}
