@@ -43,7 +43,17 @@ a {
 .btn-light {
   background: #f4f4f4;
   color: #000; }
+  .btn-light:hover {
+    --webkit-transform: $property;
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+    background-color: #b4b4b4; }
 
 .btn-dark {
   background: #333;
   color: #fff; }
+  .btn-dark:hover {
+    --webkit-transform: $property;
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    background-color: #737373; }
