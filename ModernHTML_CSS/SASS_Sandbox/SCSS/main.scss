@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto|Staatliches');
 @import 'variables';
+@import 'functions';
 
 
 * {
@@ -18,7 +19,7 @@ body {
 
 header {
   background: $dark-color;
-  color: $light-color;
+  color: set-text-color($dark-color);
   padding: 1rem;
 
   h1 {
@@ -34,13 +35,13 @@ header {
   }
 
   &-a {
-    background: $primary-color;
-    color: $color-textWhite;
+  background: $primary-color;
+  color: set-text-color($primary-color);
   }
 
   &-b {
     background: $secondary-color;
-    color: $color-textWhite;
+    color: set-text-color($secondary-color);
   }
 
 }
@@ -64,12 +65,12 @@ a {
   &-light {
     @extend %btn-shared;
     background: $light-color;
-    color: #333;
+    color: set-text-color($light-color);
   }
 
   &-dark {
     @extend %btn-shared;
-    background-color: $dark-color;
-    color: #fff;
+    background: $dark-color;
+    color: set-text-color($dark-color);
   }
 }
