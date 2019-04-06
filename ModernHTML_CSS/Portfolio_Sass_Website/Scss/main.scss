@@ -79,6 +79,8 @@ img {
 
 // Header
 #header {
+
+  // Header home
   &-home {
     background: $image-bg;
     background-position: center right;
@@ -87,7 +89,18 @@ img {
     height: 100vh;
     color: $color-textWhite;
 
+    // Header Content
+    .header-container {
+      text-align: center;
+      padding-top: 20%;
+    }
+
+    h1 {
+      font-size: 4rem;
+      line-height: 1.4;
+    }
   }
 
+  // Header Inner
   &-inner {}
 }
