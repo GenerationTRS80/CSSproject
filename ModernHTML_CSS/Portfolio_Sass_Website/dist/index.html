@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,31 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="./Css/main.css">
-  <link rel="stylesheet" media="screen and (max-width: 760px)" href="./Css/mobile.css">
+  <!-- <link rel="stylesheet" media="screen and (max-width: 760px)" href="./Css/mobile.css"> -->
   <title>Phil Seiersen | UI/UX Design and Photo Editor</title>
 </head>
+
 <body>
-  <h1>Hello</h1>
+  <!-- Header -->
+  <header id="header-home">
+    <div class="container">
+      <nav id="main-nav">
+        <img src="img/logo.png" alt="My Portfolio" id='logo'>
+        <ul>
+          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-container">
+        <h1>I am Phil <span class="txt-type" data-wait="3000" data-words='["Analytics","Developer","UI/UX"]'></span>
+        </h1>
+        <p class="lead">I specialize in Reporting Tools developement and Data Design</p>
+        <a href="work.html" class="btn-light">View my Work</a>
+      </div>
+    </div>
+  </header>
 </body>
+
 </html>
