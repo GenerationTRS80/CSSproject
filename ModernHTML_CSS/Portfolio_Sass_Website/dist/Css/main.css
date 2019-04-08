@@ -36,6 +36,30 @@ a[class^='btn-']:hover {
 .text-center {
   text-align: center; }
 
+.pad-1 {
+  padding: 1rem 0; }
+
+.pad-2 {
+  padding: 2rem 0; }
+
+.pad-3 {
+  padding: 3rem 0; }
+
+.pad-4 {
+  padding: 4rem 0; }
+
+.mar-1 {
+  margin: 1rem 0; }
+
+.mar-2 {
+  margin: 2rem 0; }
+
+.mar-3 {
+  margin: 3rem 0; }
+
+.mar-4 {
+  margin: 4rem 0; }
+
 * {
   margin: 0;
   padding: 0;
@@ -100,3 +124,14 @@ img {
   #header-home h1 {
     font-size: 4rem;
     line-height: 1.4; }
+
+#home-a .specials {
+  margin-top: 3rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr); }
+  #home-a .specials .far,
+  #home-a .specials .fas,
+  #home-a .specials .fal {
+    color: #ffbc00;
+    padding-bottom: 0.4rem; }
