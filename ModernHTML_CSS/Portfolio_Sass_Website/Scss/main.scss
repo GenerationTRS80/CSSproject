@@ -26,6 +26,10 @@ ul {
   list-style: none;
 }
 
+li {
+  list-style: none;
+}
+
 h2,
 h3,
 h4 {
@@ -107,6 +111,8 @@ img {
 
 // Home Sections
 #home {
+
+  // Home Section A
   &-a {
     .specials {
       margin-top: 3rem;
@@ -119,6 +125,40 @@ img {
       .fal {
         color: $color-main;
         padding-bottom: 0.4rem;
+      }
+    }
+  }
+
+  // Home Section B
+  &-b {
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1rem;
+
+      li {
+        line-height: 2;
+
+        &.stats-title {
+          font-size: 1.5rem;
+        }
+
+        &.stats-number {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+      }
+
+      div {
+        padding: 3rem 0;
+
+        &:nth-child(odd) {
+          background: $color-light;
+        }
+
+        &:nth-child(even) {
+          background: $color-medium;
+        }
       }
     }
   }
