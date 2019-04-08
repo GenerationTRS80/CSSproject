@@ -1,41 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Css/main.css" />
+    <!-- <link rel="stylesheet" media="screen and (max-width: 760px)" href="./Css/mobile.css"> -->
+    <title>Phil Seiersen | UI/UX Design and Photo Editor</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="./Css/main.css">
-  <!-- <link rel="stylesheet" media="screen and (max-width: 760px)" href="./Css/mobile.css"> -->
-  <title>Phil Seiersen | UI/UX Design and Photo Editor</title>
-</head>
-
-<body>
-  <!-- Header -->
-  <header id="header-home">
-    <div class="container">
-      <nav id="main-nav">
-        <img src="img/logo.png" alt="My Portfolio" id='logo'>
-        <ul>
-          <li><a href="index.html" class="current">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="header-container">
-        <h1>I am Phil <span class="txt-type" data-wait="3000" data-words='["Analytics","Developer","UI/UX"]'></span>
-        </h1>
-        <p class="lead">I specialize in Reporting Tools developement and Data Design</p>
-        <a href="work.html" class="btn-light">View my Work</a>
+  <body>
+    <!-- Header -->
+    <header id="header-home">
+      <div class="container">
+        <nav id="main-nav">
+          <img src="img/logo.png" alt="My Portfolio" id="logo" />
+          <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-container">
+          <h1>
+            I am Phil
+            <span
+              class="txt-type"
+              data-wait="3000"
+              data-words='["Analytics","Developer","UI/UX"]'
+            ></span>
+          </h1>
+          <p class="lead">
+            I specialize in Reporting Tools developement and Data Design
+          </p>
+          <a href="work.html" class="btn-light">View my Work</a>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- JavaScript -->
-  <script src="./Js/typewriter.js"></script>
-</body>
+    <!-- Section A: Specialize -->
+    <section id="home-a" class="text-center pad-2">
+      <div class="container">
+        <h2 class="section-title">I specialize In</h2>
+        <div class="botton-line"></div>
+        <p class="lead">
+          I develop financial analytical tools for budgeting, inventory
+          valuation on variety of platforms
+        </p>
+        <div class="specials">
+          <div>
+            <i class="fas fa-database fa-2x"></i>
+            <h3>Develoment Web/Database</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. At natus
+              ex perferendis praesentium aperiam magnam vel explicabo. Dolores,
+              omnis voluptatibus.
+            </p>
+          </div>
+          <div>
+            <i class="fal fa-analytics fa-2x"></i>
+            <h3>Analytics</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. At natus
+              ex perferendis praesentium aperiam magnam vel explicabo. Dolores,
+              omnis voluptatibus.
+            </p>
+          </div>
+          <div>
+            <i class="far fa-file-chart-pie fa-2x"></i>
+            <h3>Reporting Budget/Inventory</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. At natus
+              ex perferendis praesentium aperiam magnam vel explicabo. Dolores,
+              omnis voluptatibus.
+            </p>
+          </div>
+          <div>
+            <i class="far fa-handshake fa-2x"></i>
+            <h3>Consulting</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. At natus
+              ex perferendis praesentium aperiam magnam vel explicabo. Dolores,
+              omnis voluptatibus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- JavaScript -->
+    <script src="./Js/typewriter.js"></script>
+  </body>
 </html>
